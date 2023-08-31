@@ -99,7 +99,6 @@ body {
 }
 
 .btn {
-  text-align: center;
   background-color: var(--dark-cyan);
   width: 100%;
   padding: 1rem;
@@ -110,6 +109,11 @@ body {
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.35s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.726rem;
 }
 
 .btn:is(:hover, :focus-visible) {
