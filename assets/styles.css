@@ -15,7 +15,130 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a,
+span {
+  display: inline-block;
+}
+
 body {
-  font-family: "Fraunces", serif;
   font-family: "Montserrat", sans-serif;
+  background-color: var(--cream);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--dark-grayish-blue);
+  padding: 1.75rem 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--white);
+  max-width: 23.438rem;
+}
+
+.product__image--box {
+  max-height: 15rem;
+  overflow: hidden;
+}
+
+.product__image--box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.product__details {
+  padding: 1.5rem;
+}
+
+.product__subheading {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 0.75rem;
+}
+
+.product__heading {
+  color: var(--very-dark-blue);
+  margin-bottom: 1rem;
+}
+.product__text {
+  line-height: 164.286%;
+  margin-bottom: 1.5rem;
+}
+
+.product__price--details {
+  margin-bottom: 1.25rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.product__price--lg {
+  color: var(--dark-cyan);
+}
+.product__heading,
+.product__price--lg {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 100%;
+  font-family: "Fraunces", serif;
+}
+.product__price--sm {
+  line-height: 176.923%;
+  text-decoration: line-through;
+  font-size: 0.813rem;
+}
+
+.btn {
+  text-align: center;
+  background-color: var(--dark-cyan);
+  width: 100%;
+  padding: 1rem;
+  color: var(--white);
+  font: inherit;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.btn:is(:hover, :focus-visible) {
+  background-color: #1a4032;
+}
+
+@media (min-width: 48rem) {
+  .card {
+    max-width: 37.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product__image--box {
+    max-height: 28.125rem;
+  }
+  .product__image--box img {
+    height: 100%;
+  }
+  .product__details {
+    padding: 2remrem;
+  }
+  .product__subheading {
+    margin-bottom: 1.25rem;
+  }
+  .product__heading {
+    margin-bottom: 1.5rem;
+  }
+  .product__text,
+  .product__price--details {
+    margin-bottom: 1.875rem;
+  }
 }
