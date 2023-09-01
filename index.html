@@ -26,35 +26,37 @@
     />
   </head>
   <body>
-    <main class="card">
-      <picture class="product__image--box">
-        <source
-          media="(max-width: 768px)"
-          srcset="./assets/images/image-product-mobile.jpg"
-        />
-        <img
-          src="./assets/images/image-product-desktop.jpg"
-          alt="product preview"
-        />
-      </picture>
-      <div class="product__details">
-        <span class="product__subheading">Perfume</span>
-        <h1 class="product__heading">Gabrielle Essence Eau De Parfum</h1>
-        <p class="product__text">
-          A floral, solar and voluptuous interpretation composed by Olivier
-          Polge, Perfumer-Creator for the House of CHANEL.
-        </p>
-        <div class="product__price--details">
-          <span class="product__price--lg">$149.99</span>
-          <span class="product__price--sm">$169.99</span>
-        </div>
+    <main>
+      <div class="card">
+        <picture class="product__image--box">
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets/images/image-product-mobile.jpg"
+          />
+          <img
+            src="./assets/images/image-product-desktop.jpg"
+            alt="product preview card"
+          />
+        </picture>
+        <div class="product__details">
+          <p class="product__subheading">Perfume</p>
+          <h1 class="product__heading">Gabrielle Essence Eau De Parfum</h1>
+          <p class="product__text">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <p class="product__price--details">
+            <span class="product__price--lg">$149.99</span>
+            <s class="product__price--sm ">$169.99</s>
+          </p>
 
-        <a href="#" class="btn">
-          <span class="btn__icon"
-            ><img src="./assets/images/icon-cart.svg" alt=""
-          /></span>
-          <span class="btn__text">Add to Cart</span>
-        </a>
+          <button href="#" class="btn">
+            <span class="btn__icon"
+              ><img src="./assets/images/icon-cart.svg" alt=""
+            /></span>
+            <span class="btn__text">Add to Cart</span>
+          </butt>
+        </div>
       </div>
     </main>
   </body>

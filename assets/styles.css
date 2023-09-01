@@ -46,11 +46,11 @@ body {
 }
 
 .product__image--box {
-  max-height: 15rem;
   overflow: hidden;
 }
 
 .product__image--box img {
+  display: block;
   width: 100%;
   object-fit: cover;
 }
@@ -62,7 +62,7 @@ body {
 .product__subheading {
   font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 0.313em;
   margin-bottom: 0.75rem;
 }
 
@@ -71,7 +71,7 @@ body {
   margin-bottom: 1rem;
 }
 .product__text {
-  line-height: 164.286%;
+  line-height: 1.64286;
   margin-bottom: 1.5rem;
 }
 
@@ -89,16 +89,17 @@ body {
 .product__price--lg {
   font-size: 2rem;
   font-weight: 700;
-  line-height: 100%;
+  line-height: 1;
   font-family: "Fraunces", serif;
 }
 .product__price--sm {
-  line-height: 176.923%;
-  text-decoration: line-through;
+  line-height: 176923.;
   font-size: 0.813rem;
 }
 
 .btn {
+  border: none;
+  outline: none;
   background-color: var(--dark-cyan);
   width: 100%;
   padding: 1rem;
@@ -120,15 +121,26 @@ body {
   background-color: #1a4032;
 }
 
+/* Accessibility Classes
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+} */
+
 @media (min-width: 48rem) {
   .card {
     max-width: 37.5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .product__image--box {
+  /* .product__image--box {
     max-height: max-content;
-  }
+  } */
   .product__image--box img {
     height: 100%;
   }
